@@ -66,7 +66,7 @@ a {
 .description p {
   color: #666;
   font-size: 20px;
-  width: 50%;
+  width: 100%;
   line-height: 1.5;
 }
 .description button {
@@ -88,21 +88,24 @@ a {
 .about img {
   height: 100%;
   width: 100%;
-  border-radius: 30%;
+  border-radius: 10%;
 }
 .about span {
   display: block;
   color: #888;
   position: absolute;
 }
-.about .desc {
+.about .desc,
+.contact {
   padding: 2em;
   border-left: 4px solid #10828c;
 }
-.about .desc h3 {
+.about .desc h3,
+.contact h3 {
   color: #10828c;
 }
-.about .desc p {
+.about .desc p,
+.contact p {
   line-height: 2;
   color: #888;
 }
@@ -171,29 +174,23 @@ a {
 }
 
 /*Contact form */
-.contact-form {
+.contact {
   margin: 6em 0;
+
   position: relative;
 }
-.contact-form h1 {
+.contact h1 {
   /* padding: 2em 1px; */
   text-align: center;
   color: #f97300;
+  margin-bottom: 2em;
 }
 
-.contact-form a {
+.contact a {
   width: 64px;
   padding: 0.5em;
 }
-.contact-form .right {
+.contact .right {
   max-width: 600px;
-}
-.contact-form .right .btn-secondary {
-  background: #f97300;
-  color: #fff;
-  border: 0;
-}
-.contact-form .right .form-control::placeholder {
-  color: #888;
-  font-size: 16px;
+  border-left: 4px solid #10828c;
 }
